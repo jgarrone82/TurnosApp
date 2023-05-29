@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace SistTurnos.Models
+namespace TurnosApp.Models
 {
     public class Specialty
     {
