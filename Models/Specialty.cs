@@ -6,6 +6,6 @@ namespace TurnosApp.Models
     {
         [Key]
         public int idSpecialty { get; set; }
-        public string Descripction { get; set; }        
+        public string Description { get; set; }        
     }
 }

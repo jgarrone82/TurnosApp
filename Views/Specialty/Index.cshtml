@@ -1,3 +1,4 @@
+@model IEnumerable<TurnosApp.Models.Specialty>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,16 +14,16 @@
     <table>
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Description</th>
+                <th>@Html.DisplayNameFor(model => model.Description)</th>              
             </tr>
         </thead>
         <tbody>
-            @*TODO: Add the list of specialties here from the database*@
-            <tr>
-@*                 <td>@Html.DisplayFor(model => model.Name)@</td>
-                <td>@Html.DisplayFor(model => model.Description)@</td>                 *@
-            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                </tr>
+            }            
         </tbody>
     </table>
 </body>
