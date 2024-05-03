@@ -1,9 +1,6 @@
 namespace TurnosApp.Models
 {
-    using System;    
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Linq;
-    using Microsoft.EntityFrameworkCore;    
+    using Microsoft.EntityFrameworkCore;
 
     public class TurnosContext : DbContext
     {

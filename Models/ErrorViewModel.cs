@@ -1,5 +1,3 @@
-using System;
-
 namespace TurnosApp.Models
 {
     public class ErrorViewModel
