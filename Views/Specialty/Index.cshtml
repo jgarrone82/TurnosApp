@@ -1,29 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Specialties</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-    <h1>Specialties</h1>
-    <table>
-        <thead>
+@model IEnumerable<TurnosApp.Models.Specialty>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Description)</th>              
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
             <tr>
-                <th>Name</th>
-                <th>Description</th>
+                <td>@Html.DisplayFor(modelItem => item.Description)</td>
             </tr>
-        </thead>
-        <tbody>
-            @*TODO: Add the list of specialties here from the database*@
-            <tr>
-@*                 <td>@Html.DisplayFor(model => model.Name)@</td>
-                <td>@Html.DisplayFor(model => model.Description)@</td>                 *@
-            </tr>
-        </tbody>
-    </table>
-</body>
-</html>
+        }            
+    </tbody>
+</table>
